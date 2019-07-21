@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Righteous', cursive;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background: rgba(16, 0, 164, .7);
+    
+}
+ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    background: transparent;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.toggle {
+    text-align: right;
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: none;
+}
+
+.mainBanner {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f0efef;
+}
+
+.landing-image {
+    font-size: 80px;
+    align-items: center;
+}
+
+section:nth-child(even){
+    background: #f0efef;
+
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 600px){
+    .toggle {
+        display: block;
+    }
+
+    .navBar {
+        width: 100%;
+        display: none;
+    }
+    .navBar > li {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+}
+
